@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeControllr;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InventoriesController;
 
-Route::middleware(['guess.auth'])->group(function () {
+Route::middleware(['guess.auth', 'prevent.back'])->group(function () {
     Route::get('/', [HomeControllr::class, 'index'])->name('home');
 
     Route::get('/sign-in', [HomeControllr::class, 'sign_in'])->name('sign_in');

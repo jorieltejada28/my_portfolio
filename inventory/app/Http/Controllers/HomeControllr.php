@@ -54,7 +54,7 @@ class HomeControllr extends Controller
 
             $request->session()->regenerate();
 
-            return redirect()->route('dashboard')->with('success', 'Logged in successfully.');
+            return redirect()->route('dashboard')->with('success', 'Signned in successfully.');
         }
 
         return back()->withErrors([

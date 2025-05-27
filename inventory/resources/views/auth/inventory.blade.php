@@ -112,7 +112,7 @@
                             </div>
 
                             <div class="col-md-6 mb-3">
-                                <label for="itemPrice" class="form-label">Price</label>
+                                <label for="itemPrice" class="form-label">Price must ex. "100"</label>
                                 <input type="text" class="form-control" name="itemPrice" id="itemPrice">
                             </div>
 
